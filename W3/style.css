@@ -1,0 +1,243 @@
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+    color: #f0f0f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #2c2c4a !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.navbar-brand, .nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #f8f9fa !important;
+}
+
+.navbar-toggler {
+    border-color: #cbd5e1 !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    position: relative;
+}
+
+.carousel-item img {
+    height: 500px !important;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    max-width: 80%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    text-shadow: none;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-caption h5 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #f0f0f5;
+    margin-bottom: 0.3rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    color: #d0d0e0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #a0d468;
+    filter: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #a0d468;
+    width: 14px;
+    height: 14px;
+}
+
+.staff-card {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #2a2a4a;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+}
+
+.staff-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.staff-card .card-body {
+    flex-grow: 1;
+    padding: 1.5rem;
+    color: #d0d0f0;
+}
+
+.staff-card .card-title {
+    font-weight: 700;
+    color: #f0f0ff;
+    margin-bottom: 0.5rem;
+}
+
+.staff-card .card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #c0c0d0;
+}
+
+form.d-flex input.form-control {
+    background-color: #444466;
+    border: none;
+    color: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 25px 0 0 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+}
+
+form.d-flex input.form-control::placeholder {
+    color: #bbb;
+}
+
+form.d-flex input.form-control:focus {
+    background-color: #5a5a7a;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 8px #a0d468;
+}
+
+form.d-flex button.btn-outline-success {
+    border-radius: 0 25px 25px 0;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: #a0d468;
+    color: #1e1e2f;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(160, 212, 104, 0.5);
+}
+
+form.d-flex button.btn-outline-success:hover {
+    background-color: #8cc63f;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(140, 198, 63, 0.7);
+}
+
+section#aboutus {
+    background: #1f1f3a;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    color: #d0d0f0;
+}
+
+section#aboutus p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a0a0c0;
+}
+
+section#aboutus h2 {
+    color: #a0d468;
+}
+
+section#aboutus img {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease;
+}
+
+section#aboutus img:hover {
+    transform: scale(1.05);
+}
+
+.highlight {
+    animation: highlightGlow 2s ease-in-out 3;
+    border: 2px solid #a0d468;
+    box-shadow: 0 0 15px #a0d468;
+    border-radius: 12px;
+}
+
+@keyframes highlightGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px #a0d468;
+    }
+    50% {
+        box-shadow: 0 0 25px #a0d468;
+    }
+}
